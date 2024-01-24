@@ -1,0 +1,41 @@
+Q.1=> HOW TO PRINT ENTIRE ARRAY ?
+ANS.=>
+#include<iostream>
+using namespace std;
+int main(){
+    int euder[]={2,5,7,9,4,2};
+    int size = sizeof(euder)/sizeof(euder[0]);
+    for(int i=0;i<size;i++){
+        cout<<"elements are "<<euder[i]<<endl;
+    }
+    cout<<"\n";
+}
+----------------------------------------------------------------
+Q.2=> HOW TO FIND MAXIMUM OR MINIMUM IN A ARRAY ?
+ANS.=> 
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int numbers[] = {4, 15, 8, 2, 22};
+    int size = sizeof(numbers) / sizeof(numbers[0]);
+
+    int maxElement = numbers[0]; // Assume the first element is the maximum
+    int minElement = numbers[0]; // Assume the first element is the minimum
+
+    for (int i = 1; i < size; i++) {
+        if (numbers[i] > maxElement) {
+            maxElement = numbers[i];
+        }
+        if (numbers[i] < minElement) {
+            minElement = numbers[i];
+        }
+    }
+
+    cout << "Maximum element: " << maxElement << endl;
+    cout << "Minimum element: " << minElement << endl;
+
+    return 0;
+}
+-----------------------------------------------------------------------------------------------
