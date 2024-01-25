@@ -1,0 +1,72 @@
+Q1.Write a c++ program to check if  a number is positive or negative number?
+ans=>
+#include<bits/stdc++.h>
+using namespace std;
+int  main(){
+    int a;
+    cin>>a;
+    if(a>0){
+        cout<<"positive number";
+    }
+    else{
+        cout<<"negative number";
+    }
+}
+======================================================================================================================================
+Q2.Create a program wheather a given integer is odd or even?
+ans=>#include<bits/stdc++.h>
+using namespace std;
+int  main(){
+    int a;
+    cin>>a;
+    if(a%2==0){
+        cout<<"even number";
+    }
+    else{
+        cout<<"odd number";
+    }
+}
+======================================================================================================================================
+Q3.Write a program to find the maximum of theree numbers using if-else statements.
+ans=>
+#include <bits/stdc++.h>
+using namespace std;
+ 
+
+int main()
+{
+    int a, b, c;
+    cout << "Enter the three numbers a, b & c" << endl;
+    cin >> a >> b >> c;
+ 
+    if (a >= b) {
+        
+        
+        if (a >= c) {
+            
+            
+            cout << "The Largest Among Three Numbers is : "
+                 << a << endl;
+        }
+        else {
+            
+            cout << "The Largest Among Three Numbers is : "
+                 << c << endl;
+        }
+    }
+    else {
+        
+        if (b >= c) {
+            
+            
+            cout << "The Largest Among Three Numbers is : "
+                 << b << endl;
+        }
+        else {
+            
+            cout << "The Largest Among Three Numbers is : "
+                 << c << endl;
+        }
+    }
+    return 0;
+}
