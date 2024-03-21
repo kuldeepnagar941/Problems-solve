@@ -1,0 +1,64 @@
+allEven() =>1--100 EVEN NUMBER 
+random() =>34 89 mid even number 
+allOdd=>1-->odd number 
+ramdomOdd() =>34 89 mid 
+
+#include <stdio.h>
+int  alleven(int start,int end);
+int  randomeven(int start,int end);
+int  allodd(int start,int end);
+
+int  randomodd(int start,int end);
+
+int main()
+{
+    int start=1;
+    int end=100;
+     int a=alleven(start,end);
+     printf("\n");
+      
+    scanf("%d%d",&start,&end);
+     int b=randomeven(start,end);
+     printf("\n");
+     scanf("%d%d",&start,&end);
+     int c=allodd(start,end);
+     printf("\n");
+     scanf("%d%d",&start,&end);
+     int d=randomodd(start,end);
+
+    return 0;
+}
+int   alleven(int start,int end){
+    
+    for(int i=start;i<=end;i++){
+        if(i%2==0){
+            printf("%d\n",i);
+        }
+    }
+}
+int  randomeven(int start,int end){
+   
+    for(int i=start;i<=end;i++){
+        if(i%2==0){
+            printf("%d\n",i);
+        }
+    }
+    
+}
+int  allodd(int start,int end){
+    
+    for(int i=start;i<=end;i++){
+        if(i%2!=0){
+            printf("%d\n",i);
+        }
+    }
+}
+int  randomodd(int start,int end){
+    
+    for(int i=start;i<=end;i++){
+        if(i%2!=0){
+            printf("%d\n",i);
+        }
+    }
+    
+}
