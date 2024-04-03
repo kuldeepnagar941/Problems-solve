@@ -1,0 +1,67 @@
+//constant
+int add4(int a,int b);
+int main(){
+    add1();
+    printf("\n");
+    add2(2,3);
+    printf("\n");
+    printf("%d",add3());
+    printf("\n");
+    printf("%d",add4(40,50));
+    
+    
+}
+void add1(){
+    int a,b;
+    a=10;b=20;
+    printf("%d",a+b);
+}
+void add2(int a,int b){
+    printf("%d",a+b);
+}
+int add3(){
+    int a=10;
+    int b=20;
+    return a+b;
+}
+int add4(int a,int b){
+    return a+b;
+}
+//user input
+
+#include<stdio.h>
+void add1();
+void add2(int a, int b);
+int add3();
+int add4(int a,int b);
+int main(){
+    add1();
+    printf("\n");
+    int c,d;
+    scanf("%d%d",&c,&d);
+    add2(c,d);
+    printf("\n");
+    printf("%d",add3());
+    printf("\n");
+    int y,z;
+    scanf("%d%d",&y,&z);
+    printf("%d",add4(y,z));
+    
+    
+}
+void add1(){
+    int a,b;
+    scanf("%d%d",&a,&b);
+    printf("%d",a+b);
+}
+void add2(int a,int b){
+    printf("%d",a+b);
+}
+int add3(){
+    int r,q;
+    scanf("%d%d",&r,&q);
+    return r+q;
+}
+int add4(int a,int b){
+    return a+b;
+}
