@@ -1,0 +1,23 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int num;
+    cin>>num;
+    int flag=0;
+    
+    for(int i=2; i<num; i++)
+    {
+        if(num%i==0)
+        {
+            flag=1;
+        }
+    }
+    if(flag==1)
+    {
+        cout<<"not a prime num"<<endl;
+    }else {
+        cout<<"prime number"<<endl;
+    }
+    return 0;
+}

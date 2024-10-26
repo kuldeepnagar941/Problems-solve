@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int num;
+    cout <<"enter number"  <<endl;
+    cin >>num  ;
+    if(num % 2 != 0){
+        cout<<"number is odd number"<<endl;
+        }else{
+            cout<<"number id not odd number"<<endl;
+        }
+    
+    return 0;
+}
